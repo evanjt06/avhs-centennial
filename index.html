@@ -5,30 +5,95 @@
   <link rel="stylesheet" href="./fullpage.css" />
   <style>
     .section {
+      /* alter styles here, free to use gridbox or flex */
       text-align:center;
       font-size: 3em;
     }
-    .content{
-      margin:50px
+    #fp-nav {
+      background: white;
+      border-radius: 25px;
+      padding: 8px;
     }
   </style>
 </head>
 
 <div id="fullpage">
-  <div class="section">One</div>
-  <div class="section">Two</div>
-  <div class="section fp-auto-height">
-    <div class="content">Three</div>
+  <div class="section">
+    1931
+    <img src="./images/1931/Clubs/UNIFLOW_AVHS_Library2_0256_001.jpg" width="400" />
   </div>
-  <div class="section fp-auto-height">
-    <div class="content">Four</div>
-</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLSAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLSAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLSAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLSAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLSAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLSAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLSAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLSAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLSAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLSAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLSAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLSAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLE TEST TODO CHANGE LATER</div>
+  <div class="section">SAMPLSAMPLE TEST TODO CHANGE LATER</div>
+  
 </div>
 
 <script>
+  let sectionsColor = []
+  for (let i = 0; i < 50; i++) {
+    if (i % 2 === 0) {
+      sectionsColor.push("rgba(80,74,145,1)")
+    } else {
+      sectionsColor.push("rgba(245,210,24,1)")
+    }
+  }
+
   new fullpage('#fullpage', {
-  sectionsColor: ['purple', 'yellow', 'green', 'red'],
-});
+    navigation: true,
+    sectionsColor
+  });
+
+  // TODO add functions that iterate thru each image directory...
+  // TODO add year next to each dot on navigation on the right side
 </script>
 
 </html>
