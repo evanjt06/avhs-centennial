@@ -1,0 +1,34 @@
+<html lang="en">
+
+<head>
+  <script src="./fullpage.js"></script>
+  <link rel="stylesheet" href="./fullpage.css" />
+  <style>
+    .section {
+      text-align:center;
+      font-size: 3em;
+    }
+    .content{
+      margin:50px
+    }
+  </style>
+</head>
+
+<div id="fullpage">
+  <div class="section">One</div>
+  <div class="section">Two</div>
+  <div class="section fp-auto-height">
+    <div class="content">Three</div>
+  </div>
+  <div class="section fp-auto-height">
+    <div class="content">Four</div>
+</div>
+</div>
+
+<script>
+  new fullpage('#fullpage', {
+  sectionsColor: ['purple', 'yellow', 'green', 'red'],
+});
+</script>
+
+</html>
