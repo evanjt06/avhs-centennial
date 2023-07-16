@@ -15,11 +15,11 @@ fetch('https://raw.githubusercontent.com/evanjt06/avhs-centennial/master/images.
         for (let x=0; x<data[year][category].length; x++) { // iterating through each image of each category
 
           const section = document.createElement("div") // example of how you're gonna implement your html
-          section.setAttribute("id", String(year)); // id
-          section.classList.add("section"); // class
-          fullPage.appendChild(section); // put tags within other tags 
+          section.setAttribute("id", String(year)); // div id
+          section.classList.add("section"); // div class
+          fullPage.appendChild(section); // put div tags within other div tags 
           
-          console.log(document) // check if HTML is formatting properly 
+          console.log(document) // visualize HTML structure
           console.log(data[year][category][x])
         }
       }
