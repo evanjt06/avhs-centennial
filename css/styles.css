@@ -107,9 +107,15 @@ body {
   overflow-x: hidden
 }
 
+h5 {
+  width: 60%;
+}
 @media only screen and (max-width: 550px) {
   .carousel-control-next {
     display: none !important;
+  }
+  h5 {
+    width: 90%;
   }
 }
 hr {
