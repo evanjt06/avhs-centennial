@@ -6,8 +6,6 @@
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
 
-$('.carousel').bcSwipe({ threshold: 50 });
-
 function load(category) {
   fetch('https://raw.githubusercontent.com/evanjt06/avhs-centennial/master/images.json')
       .then(response => response.json())
