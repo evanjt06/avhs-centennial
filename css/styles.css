@@ -107,6 +107,9 @@ body {
   overflow-x: hidden
 }
 
+.main-logo-head {
+  display: flex; margin: 5px; width: 60%
+}
 h5 {
   width: 60%;
 }
@@ -116,6 +119,9 @@ h5 {
   }
   h5 {
     width: 90%;
+  }
+  .main-logo-head {
+    width: 100%
   }
 }
 hr {
