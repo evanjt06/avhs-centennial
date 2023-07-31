@@ -46,7 +46,7 @@ function load(category) {
                   if(category=="Life"){
                     currHtml += `</div>
                  <center><h1>${year}</h1></center>
-                  <br /><br /><br />
+                 <br />
                         <div class="carousel-inner">
                           <div class="carousel-item active">
                             <img src="images/${year}/Student ${category}/${data[year][category][0]}"  class="d-block w-100" alt="...">
@@ -54,7 +54,7 @@ function load(category) {
                   } else {
                     currHtml += `</div>
                  <center><h1>${year}</h1></center>
-                  <br /><br /><br />
+                  <br />
                         <div class="carousel-inner">
                           <div class="carousel-item active">
                             <img src="images/${year}/${category}/${data[year][category][0]}"  class="d-block w-100" alt="...">
@@ -96,9 +96,9 @@ function load(category) {
 
           }
 
-          document.body.innerHTML += `<footer class="py-5 bg-dark">
-          <div class="container"><p class="m-0 text-center text-white">Copyright &copy AV Web Development 2023</p></div>
-      </footer>`
+          document.body.innerHTML += ` <div class="footer-avwebdev">
+          <div class="footer-avwebdev-text"><img src="assets/webf.png" width=40 height=40/> <a class="footer-avwebdev-link" href="https://avweb.org">created by av web</a></div>        
+      </div>`
         
       })
       .catch(error => {
