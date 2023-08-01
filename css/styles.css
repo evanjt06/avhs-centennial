@@ -85,6 +85,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif !important;
 }
 
 @media (prefers-reduced-motion: no-preference) {

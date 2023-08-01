@@ -64,7 +64,7 @@ function load(category) {
                   console.log(year,category,data[year][category])
                   if(category=="Life"){
                     currHtml += `</div>
-                 <center><h1>${year}</h1></center>
+                 <center><h1><b>${year}</b></h1></center>
                  <br />
                         <div class="carousel-inner">
                           <div class="carousel-item active">
@@ -72,7 +72,7 @@ function load(category) {
                           </div>`
                   } else {
                     currHtml += `</div>
-                 <center><h1>${year}</h1></center>
+                 <center><h1><b>${year}</b></h1></center>
                   <br />
                         <div class="carousel-inner">
                           <div class="carousel-item active">
@@ -116,7 +116,7 @@ function load(category) {
           }
 
           document.body.innerHTML += `  <div class="footer-avwebdev">
-          <div class="footer-avwebdev-text"><img src="assets/webf.png" width=40 height=40/> <a class="footer-avwebdev-link" href="https://avweb.org">created by av web</a></div>        
+          <div class="footer-avwebdev-text"><img src="assets/webf.png" width=40 height=40/> <a class="footer-avwebdev-link" href="">created by av web</a></div>        
           <div class="footer-avwebdev-text footer-names">
           Evan Tu
           | Aarush Tahiliani
