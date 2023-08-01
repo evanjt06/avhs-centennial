@@ -6,6 +6,25 @@
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
 
+$('.carousel').on('touchstart', function(event){
+    const xClick = event.originalEvent.touches[0].pageX;
+    $(this).one('touchmove', function(event){
+        const xMove = event.originalEvent.touches[0].pageX;
+        const sensitivityInPx = 5;
+
+        if( Math.floor(xClick - xMove) > sensitivityInPx ){
+            $(this).carousel('next');
+        }
+        else if( Math.floor(xClick - xMove) < -sensitivityInPx ){
+            $(this).carousel('prev');
+        }
+    });
+    $(this).on('touchend', function(){
+        $(this).off('touchmove');
+    });
+});
+
+
 function load(category) {
   fetch('https://raw.githubusercontent.com/evanjt06/avhs-centennial/master/images.json')
       .then(response => response.json())
@@ -96,9 +115,14 @@ function load(category) {
 
           }
 
-          document.body.innerHTML += ` <div class="footer-avwebdev">
+          document.body.innerHTML += `  <div class="footer-avwebdev">
           <div class="footer-avwebdev-text"><img src="assets/webf.png" width=40 height=40/> <a class="footer-avwebdev-link" href="https://avweb.org">created by av web</a></div>        
-      </div>`
+          <div class="footer-avwebdev-text footer-names">
+          Evan Tu
+          | Aarush Tahiliani
+          | Aadesh Sahoo
+          | Vivaan Vora
+        </div>    </div>`
         
       })
       .catch(error => {
