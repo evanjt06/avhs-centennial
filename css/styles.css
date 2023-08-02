@@ -3637,6 +3637,7 @@ textarea.form-control-lg {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  
 }
 
 .nav-link {
@@ -3773,7 +3774,7 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: space-between;
   padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
-  z-index:999 !important;
+  z-index:9999 !important;
 }
 .navbar > .container,
 .navbar > .container-fluid,
