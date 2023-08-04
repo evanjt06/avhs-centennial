@@ -40,7 +40,7 @@ function load(category) {
                   let currHtml = ``;
                   if (prevYear) {
                       currHtml = `
-        <section class="py-5 bg-purple">
+        <section class="py-5 bg-purple" id="${year}">
           <div class="container my-5">
               <div class="row justify-content-center">
                   <div class="col-lg-6">
@@ -48,7 +48,7 @@ function load(category) {
                         <div style="transform:translate(0, 50px);" class="carousel-indicators">`;
                   } else {
                       currHtml = `
-        <section class="py-5 bg-yellow">
+        <section class="py-5 bg-yellow" id="${year}">
           <div class="container my-5">
               <div class="row justify-content-center">
                   <div class="col-lg-6">
@@ -128,4 +128,29 @@ function load(category) {
       .catch(error => {
           console.error('Error fetching the JSON file', error);
       });
+}
+
+function locateYear(event) {
+  event.preventDefault(); 
+
+    const yearInput = document.getElementById('yearInput').value;
+
+    const targetDiv = document.getElementById(String(yearInput));
+
+    if (targetDiv) {
+
+      targetDiv.scrollIntoView({
+        behavior: 'smooth', 
+        block: 'start',     
+        inline: 'nearest'   
+    });
+
+  }
+    event.target.closest('form').reset();
+
+}
+
+function toggleScrollLock(sectionId) {
+  const section = document.getElementById(sectionId);
+  section.classList.toggle("locked");
 }
